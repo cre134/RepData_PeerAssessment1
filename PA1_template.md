@@ -15,8 +15,8 @@ The following code chunk
 
 1) Loads lubridate for converting date string into Date format.
 2) Sets up some options for printing numbers.
-2) Loads the csv file 'activity.csv' into R environment into a dataframe named 'df'.
-3) converts the column 'date' of 'df' into date format.
+3) Loads the csv file 'activity.csv' into R environment into a dataframe named 'df'.
+4) converts the column 'date' of 'df' into date format.
 
 
 ```r
@@ -55,8 +55,8 @@ The following code chunk
 
 1) Uses tapply to sum the number of steps taken during each time interval.
 2) Calculate the number of days in the set.
-5) Averages each interval.
-6) Plots the average steps taken during each interval against time.
+3) Averages each interval.
+4) Plots the average steps taken during each interval against time.
 
 
 
@@ -172,4 +172,5 @@ legend('topright', legend=c('Weekday','Weekend'), pch=c('_', '_'), col=c('black'
 ```
 
 ![plot of chunk unnamed-chunk-5](figure/unnamed-chunk-5-1.png) 
+
 

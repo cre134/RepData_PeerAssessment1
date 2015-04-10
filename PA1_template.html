@@ -211,8 +211,8 @@ hr {
 
 <p>1) Loads lubridate for converting date string into Date format.
 2) Sets up some options for printing numbers.
-2) Loads the csv file &#39;activity.csv&#39; into R environment into a dataframe named &#39;df&#39;.
-3) converts the column &#39;date&#39; of &#39;df&#39; into date format.</p>
+3) Loads the csv file &#39;activity.csv&#39; into R environment into a dataframe named &#39;df&#39;.
+4) converts the column &#39;date&#39; of &#39;df&#39; into date format.</p>
 
 <pre><code class="r">library(lubridate)
 options(scipen=999, digits = 2)
@@ -249,8 +249,8 @@ hist(stepsByDay, xlab=&#39;Number of Steps&#39;, main=&#39;Distribution of the n
 
 <p>1) Uses tapply to sum the number of steps taken during each time interval.
 2) Calculate the number of days in the set.
-5) Averages each interval.
-6) Plots the average steps taken during each interval against time.</p>
+3) Averages each interval.
+4) Plots the average steps taken during each interval against time.</p>
 
 <pre><code class="r">stepsByInterval &lt;- tapply(df$steps, df$interval, sum, na.rm=TRUE)
 numDays&lt;-length(stepsByDay)
